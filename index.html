@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- -- -- -- Bootstrap CSS -- -- -- -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+  <!-- -- -- -- Switchery CSS -- -- -- -->
+  <link rel="stylesheet" href="dist/switchery.css"> 
+  <!-- -- -- -- Mi CSS -- -- -- -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>SportLaif</title>
+</head>
+<body>
+  <h1 class="bg-primary p-2 text-white text-center">Sport Laif</h1>
+  <section id="form">
+    <form>
+      <div class="errores"></div>
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="plan">Tipo de Plan:</label>
+        <select id="plan" class="form-select">
+          <option value="14.000">2 veces por semana</option>
+          <option value="17.000">4 veces por semana</option>
+          <option value="20.000">Ilimitado</option>
+        </select>
+      </div>
+      <div class="form-check">
+        <input type="radio" name="radio-btn" id="checkbox1" class="form-check-input" checked>
+        <label for="checkbox1" class="form-check-label">Efectivo</label>
+      </div>
+      <div class="form-check">
+        <input type="radio" name="radio-btn" id="checkbox2" class="form-check-input">
+        <label for="checkbox2" class="form-check-label">Tarjeta</label>
+      </div>
+      <div class="form-group">
+        <label for="estado-pago">Estado de pago:</label>
+        <input type="checkbox" id="estado-pago" class="js-switch" checked>
+      </div>
+      <div class="form-group">
+        <button type="button" id="boton" class="btn btn-primary">Agregar</button>
+      </div>
+    </form>
+  </section>
+  <section id="cards" class="row container mx-auto g-2">
+
+  </section>
+
+  <!-- -- -- -- Bootstrap y Popper JS -- -- -- -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+  <!-- -- -- -- Switchery JS -- -- -- -->
+  <script src="dist/switchery.js"></script>
+  <!-- -- -- -- Mi JS -- -- -- -->
+  <script src="js/index.js"></script>
+</body>
+</html>
